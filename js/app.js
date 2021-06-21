@@ -42,10 +42,10 @@ else
 {alert("I am disapointed")}
 switch(z) {
     case 4:
-      alert(z + " question right, you know me well")
+      alert(name + ' you answered ' + z + " question right, you know me well")
       break;
       case 5:
-      alert(z + " question right, you know me well")
+      alert(name + ' you answered ' + z + " question right, you know me well")
       break;
       default:
-        alert(z + " question right, I hope this game let you know me more ")}
+        alert(name + ' you answered ' + z + " question right, I hope this game let you know me more ")}
