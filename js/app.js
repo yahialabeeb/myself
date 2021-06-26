@@ -135,26 +135,46 @@ Qold();
 function Qguess() {
 
     let c1 = []
+    let sccor = 0
     alert("Now, we will play another game, you should guess three numbers from 1 to 10")
     for (let i = 0; i < 6; i++) {
-        for (let q = 1; q < 4; q++) {
-            c1.push(prompt("guess number " + q))
-        }
+        c1[0] = prompt("guess first number", 'Enter one number from 1 to 10')
+        c1[1] = prompt("guess second number", 'Enter one number from 1 to 10')
+        c1[2] = prompt("guess third number", 'Enter one number from 1 to 10')
         c1.sort()
-        if (c1[0] == 1 && c1[1] == 2 && c1[2] == 3) {
-            alert("Right answer")
+        sccor = 0
+
+        if (c1[0] == 1) {
+            alert('1 is the first number remember it')
+            sccor++
+        }
+        if (c1[1] == 2) {
+            alert('2 is the second number remember it')
+            sccor++
+        }
+        if (c1[2] == 3) {
+            alert('3 is the third number remember it')
+            sccor++
+        }
+     
+        if (sccor == 3) {
+            alert("Right answer you guessed all three number")
             z++
             break;
         }
         else if (i == 5) {
             alert('Wrong answer, the right answer is 1 2 3 without consdiring the order')
         }
+        else if (sccor < 3){
+            alert("you guessed " +sccor + " number right remeber them and try again")
+        }
         else {
             c1 = []
-            alert('wrong answer')
+            alert('Wrong answer try again plz')
 
         }
     }
+
 }
 Qguess();
 
