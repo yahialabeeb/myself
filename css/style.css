@@ -8,8 +8,8 @@ h2,h3 {
     margin: 7px;
 }
 ul li {
-    color: rgb(125, 1, 1);
-    margin: 3px;
+        margin: 4px;
+        color:linen;
 }
 article
 {
@@ -17,9 +17,19 @@ article
 }
 
 ol li {
-    color: rgb(76, 3, 245);
-    margin: 3px;
+    color: rgb(253, 253, 253);
+    margin: 4px;
 }
-
 * {
-    background-color: rgb(141, 177, 245);}
+    background-color: lightskyblue;
+    
+}
+#contact {
+    float: inline-end; 
+    color:white;
+}
+article p {
+    text-align: center;
+    color:white;
+
+}
